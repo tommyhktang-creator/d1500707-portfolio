@@ -3,7 +3,7 @@
 - **Student ID:** D1500707
 - **Course:** Generative AI
 - **Live Website URL:** https://d1500707-portfolio.netlify.app/
-- **GitHub Repository:** https://github.com/tommyhktang-creator/portfolio
+- **GitHub Repository:** https://github.com/tommyhktang-creator/d1500707-portfolio
 
 ---
 
