@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>湯惠剛 (Tommy Tang) | Portfolio - D1500707</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans flex flex-col min-h-screen">
+
+  <!-- 頂部導覽列 Navigation -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#about" class="text-lg font-bold text-slate-900 tracking-tight flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-brand-700 text-white flex items-center justify-center text-sm font-semibold shadow-sm">TT</span>
+        <span>湯惠剛 <span class="text-xs text-slate-500 font-normal">| D1500707</span></span>
+      </a>
+      
+      <!-- 桌機版選單 -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-brand-700 transition">About</a>
+        <a href="#education" class="hover:text-brand-700 transition">Education & Experience</a>
+        <a href="#speaking" class="hover:text-brand-700 transition">Keynotes & Training</a>
+        <a href="#research" class="hover:text-brand-700 transition">Research & Projects</a>
+        <a href="#contact" class="hover:text-brand-700 transition">Contact</a>
+      </nav>
+
+      <!-- 行動版選單按鈕 -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- 行動版下拉選單 -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+      <a href="#about" class="block py-2 text-slate-700 hover:text-brand-700">About</a>
+      <a href="#education" class="block py-2 text-slate-700 hover:text-brand-700">Education & Experience</a>
+      <a href="#speaking" class="block py-2 text-slate-700 hover:text-brand-700">Keynotes & Training</a>
+      <a href="#research" class="block py-2 text-slate-700 hover:text-brand-700">Research & Projects</a>
+      <a href="#contact" class="block py-2 text-slate-700 hover:text-brand-700">Contact</a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- SECTION 1: ABOUT (Name in EN & CN, Student ID) -->
+    <section id="about" class="pt-16 pb-20 bg-gradient-to-b from-white to-slate-100/60 border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-8 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 border border-brand-100 text-brand-800 text-xs font-semibold rounded-full">
+              <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+              Ph.D. Student | Senior AI Executive & Industry Lecturer
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              湯惠剛 <span class="text-2xl sm:text-3xl font-normal text-slate-600 font-sans">/ Hui-Kang (Tommy) Tang</span>
+            </h1>
+
+            <p class="text-sm font-mono text-slate-500 bg-slate-100 inline-block px-2.5 py-1 rounded border border-slate-200">
+              Student ID: D1500707
+            </p>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+              現為長庚大學臨床醫學研究所博士生（AI 主軸），並擔任國眾電腦資深副總經理。具備材料工程扎實的微觀結構與科學實證思維，深耕大型系統整合、企業邊緣運算與醫療健康科技。長期受邀於政府部會、產業公協會及大專院校講授生成式 AI 落地、企業數位轉型實務與數位行銷策略；學術研究則聚焦於高齡數位功能表型（Digital Phenotyping）與可信賴臨床決策支援 AI。
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a href="#research" class="px-5 py-2.5 bg-brand-700 hover:bg-brand-800 text-white text-sm font-medium rounded-lg shadow-sm hover:shadow transition">
+                研究計畫與成果
+              </a>
+              <a href="#speaking" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-900 text-white text-sm font-medium rounded-lg shadow-sm transition">
+                演講與授課專區
+              </a>
+              <a href="#contact" class="px-5 py-2.5 bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 text-sm font-medium rounded-lg transition">
+                聯絡資訊
+              </a>
+            </div>
+          </div>
+
+          <!-- 個人識別卡片 (Visual Element 1) -->
+          <div class="lg:col-span-4">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 relative overflow-hidden">
+              <div class="absolute -right-8 -top-8 w-32 h-32 bg-brand-50 rounded-full blur-xl pointer-events-none"></div>
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-brand-800 to-sky-600 flex items-center justify-center text-white text-2xl font-bold shadow-md mb-4">
+                HKT
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg">湯惠剛 Tommy Tang</h3>
+              <p class="text-xs text-brand-700 font-semibold mb-3">CGU Ph.D. Student & LEO Systems SVP</p>
+              <div class="border-t border-slate-100 pt-3 space-y-2 text-xs text-slate-600">
+                <div class="flex justify-between">
+                  <span class="text-slate-400">專業角色:</span>
+                  <span class="font-medium text-slate-700">AI 架構師 / 企業輔導顧問 / 講師</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">核心專長:</span>
+                  <span class="font-medium text-slate-700">GenAI 賦能、Edge AI、醫療 DTx</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-slate-400">學術機構:</span>
+                  <span class="font-medium text-slate-700">長庚大學 臨床醫學研究所</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: EDUCATION & EXPERIENCE (已剔除政大，修正為大同工學碩士/學士) -->
+    <section id="education" class="py-16 bg-white border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12">
+          <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Education & Professional Background</h2>
+          <p class="text-sm text-slate-500 mt-1">從材料工程的「結構決定性質」科學思維，到產業領導與前瞻臨床 AI 研究</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- 學歷 -->
+          <div class="bg-slate-50/70 p-6 rounded-xl border border-slate-200 space-y-6">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              <span class="text-brand-700">🎓</span> 學歷背景 (Education)
+            </h3>
+            <div class="space-y-4">
+              <div class="border-l-2 border-brand-700 pl-4">
+                <h4 class="font-semibold text-slate-900 text-sm">長庚大學 臨床醫學研究所 博士班 (在學)</h4>
+                <p class="text-xs text-slate-500">Ph.D. Student in Artificial Intelligence Track | 2026 – 進行中</p>
+                <p class="text-xs text-slate-600 mt-1">研究核心為高齡數位健康、肌少症閉環自適應介入與可信賴醫療 AI 決策支援。</p>
+              </div>
+              <div class="border-l-2 border-slate-300 pl-4">
+                <h4 class="font-semibold text-slate-800 text-sm">大同大學 材料工程研究所 工學碩士</h4>
+                <p class="text-xs text-slate-500">M.S. in Materials Engineering | 1992</p>
+                <p class="text-xs text-slate-600 mt-1">建立材料微觀結構相變分析與嚴謹量化實驗方法論。</p>
+              </div>
+              <div class="border-l-2 border-slate-300 pl-4">
+                <h4 class="font-semibold text-slate-800 text-sm">大同大學 材料工程學系 工學學士</h4>
+                <p class="text-xs text-slate-500">B.S. in Materials Engineering | 1987</p>
+                <p class="text-xs text-slate-600 mt-1">奠定自然科學基礎與工程問題解析能力。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 經歷與公協會職務 -->
+          <div class="bg-slate-50/70 p-6 rounded-xl border border-slate-200 space-y-6">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              <span class="text-brand-700">💼</span> 產業經歷與公協會治理 (Leadership)
+            </h3>
+            <div class="space-y-4">
+              <div class="border-l-2 border-brand-700 pl-4">
+                <h4 class="font-semibold text-slate-900 text-sm">國眾電腦股份有限公司 (LEO Systems, Inc.)</h4>
+                <p class="text-xs text-slate-500">資深副總經理 (Senior Vice President) | 創新發展部 BU4 主管</p>
+                <p class="text-xs text-slate-600 mt-1">主導研發 AI Agent 平台、邊緣運算設備 RosettaBox，掌舵企業級 AI 與醫療資訊解決方案。</p>
+              </div>
+              <div class="border-l-2 border-slate-300 pl-4">
+                <h4 class="font-semibold text-slate-800 text-sm">社團法人數位經濟暨產業發展協會 (DTA)</h4>
+                <p class="text-xs text-slate-500">第七屆 監事 (Supervisor) | 任期至民國 117 年</p>
+                <p class="text-xs text-slate-600 mt-1">推動產業數位轉型量表評估、輔導中小企業跨越技術接軌臨界點。</p>
+              </div>
+              <div class="border-l-2 border-slate-300 pl-4">
+                <h4 class="font-semibold text-slate-800 text-sm">中華民國資訊軟體協會 (CISA)</h4>
+                <p class="text-xs text-slate-500">第 16 屆 理事 (Director)</p>
+                <p class="text-xs text-slate-600 mt-1">參與國家軟體政策研擬、生成式 AI 跨界合作與台灣軟體出海推廣。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2.5: KEYNOTES & PROFESSIONAL TRAINING (全新補正專區) -->
+    <section id="speaking" class="py-16 bg-slate-100/70 border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <span class="text-xs font-semibold uppercase tracking-wider text-brand-700 bg-brand-50 px-2.5 py-1 rounded border border-brand-200">Industry Keynotes & Capacity Building</span>
+          <h2 class="text-2xl font-bold text-slate-900 tracking-tight mt-2">演講、專題講座與企業實作培訓</h2>
+          <p class="text-sm text-slate-500 mt-1">致力於將前瞻 AI 技術與生成式工作流程化為企業實戰力，獲產官學各界廣泛邀約</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- 領域 1: 生成式 AI 賦能與企業大腦 -->
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-2xs space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-sky-50 text-brand-700 flex items-center justify-center font-bold text-lg">
+              🤖
+            </div>
+            <h3 class="font-bold text-slate-900 text-base">生成式 AI 賦能與 Agentic 實作工作坊</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              親授「AI 賦能·智造未來」工作坊（含線上及實作課程），指導企業如何透過 RAG 與國眾智慧大腦平台，打造 24 小時自主協作之 AI 員工，加速自動化流程落地。
+            </p>
+            <div class="pt-2 text-xs text-slate-400 font-medium">
+              代表案例：台北市停車場公會高階 AI 賦能工作坊、企業私有化 AI 模型導入培訓
+            </div>
+          </div>
+
+          <!-- 領域 2: 數位轉型與實用檢測技術 -->
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-2xs space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg">
+              📈
+            </div>
+            <h3 class="font-bold text-slate-900 text-base">數位行銷、SEO/GEO 與工具實作班</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              受政府與外貿智庫委託講授實務課程，拆解現代 SEO/GEO 演算法檢測技巧與數位行銷工具，引導外銷與製造業者將傳統業務能量轉化為全球數位商務吸引力。
+            </p>
+            <div class="pt-2 text-xs text-slate-400 font-medium">
+              代表案例：經濟部國際貿易局 × 外貿協會 (TAITRA) 數位行銷工具實作專題講座
+            </div>
+          </div>
+
+          <!-- 領域 3: 政策論壇與永續治理 -->
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-2xs space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-lg">
+              🏛️
+            </div>
+            <h3 class="font-bold text-slate-900 text-base">永續智慧城市與 AI 治理專家論壇</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              擔任跨界專家對談學者，探討面對氣候變遷衝擊、高齡社會挑戰下之永續科技政策，並就 AI 數據治理與企業動態能力相變機制發表實證觀點。
+            </p>
+            <div class="pt-2 text-xs text-slate-400 font-medium">
+              代表案例：臺北市立大學都市研究院專家諮詢會議、DTA 產業轉型趨勢論壇
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: RESEARCH & PROJECTS (At least 1 Research Project + Award) -->
+    <section id="research" class="py-16 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Projects & Research Highlights</h2>
+          <p class="text-sm text-slate-500 mt-1">以臨床嚴謹性為基石的學術研究，與具備商業量產能力的實務研發</p>
+        </div>
+
+        <!-- 專案 1：長庚博士班核心研究計畫 (學術研究) -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <span class="px-3 py-1 bg-sky-100 text-sky-800 text-xs font-semibold rounded-full">
+              學術研究計畫 | 臨床 AI 決策支援
+            </span>
+            <span class="text-xs text-slate-500">IRB 送審與可行性驗證架構 (Phase 1)</span>
+          </div>
+
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+              Trustworthy AI for Personalized Digital Rehabilitation in Older Adults
+            </h3>
+            <p class="text-sm text-slate-600 font-medium mt-1">
+              從可靠數位功能表型到個人化復健決策支援之研究（高齡肌少症閉環自適應介入）
+            </p>
+          </div>
+
+          <p class="text-sm text-slate-600 leading-relaxed">
+            本研究針對高齡肌少症患者建立具臨床意義的「數位功能表型（Digital Phenotyping）」，透過穿戴式設備與行動應用進行連續監測。核心創新在於導入<strong>因果推論（Causal Inference / Causal Forest）</strong>評估個體異質性治療反應，並以「<strong>AI 是臨床決策支援而非自主決策者</strong>」為原則，融入安全邊界（Safety Boundary）與臨床人員優先否決權（Clinician Override）的人在迴路（Human-in-the-loop）架構。
+          </p>
+
+          <!-- 視覺元素 2: 研究四階段架構圖 (Visual Element - Architectural Diagram) -->
+          <div class="bg-slate-50 p-4 sm:p-5 rounded-xl border border-slate-200">
+            <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              Four-Phase Research Methodology Framework
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+              <div class="bg-white p-3.5 rounded-lg border border-slate-200 shadow-2xs">
+                <span class="inline-block px-2 py-0.5 bg-slate-100 text-slate-700 font-bold rounded mb-1.5">Phase 1</span>
+                <p class="font-semibold text-slate-900">Reliable Measurement</p>
+                <p class="text-slate-500 mt-1">穿戴感測數據品質、信賴度、時間穩定性與測量誤差驗證。</p>
+              </div>
+              <div class="bg-white p-3.5 rounded-lg border border-slate-200 shadow-2xs">
+                <span class="inline-block px-2 py-0.5 bg-sky-100 text-sky-800 font-bold rounded mb-1.5">Phase 2</span>
+                <p class="font-semibold text-slate-900">Functional Phenotyping</p>
+                <p class="text-slate-500 mt-1">特徵工程、縱向分析與具臨床意義的自適應功能表型建立。</p>
+              </div>
+              <div class="bg-white p-3.5 rounded-lg border border-slate-200 shadow-2xs">
+                <span class="inline-block px-2 py-0.5 bg-indigo-100 text-indigo-800 font-bold rounded mb-1.5">Phase 3</span>
+                <p class="font-semibold text-slate-900">Causal Treatment Effect</p>
+                <p class="text-slate-500 mt-1">利用 Causal Forest 評估治療異質性（HTE）與個體化介入反應。</p>
+              </div>
+              <div class="bg-white p-3.5 rounded-lg border border-slate-200 shadow-2xs">
+                <span class="inline-block px-2 py-0.5 bg-amber-100 text-amber-800 font-bold rounded mb-1.5">Phase 4</span>
+                <p class="font-semibold text-slate-900">Trustworthy AI Support</p>
+                <p class="text-slate-500 mt-1">可解釋性模型、不確定性量化、安全邊界與醫師監督升級機制。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">Trustworthy AI</span>
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">Digital Phenotyping</span>
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">Causal Inference</span>
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">Human-in-the-loop</span>
+          </div>
+        </div>
+
+        <!-- 專案 2：2026 智慧創新大賞得獎專案 (實務研發成果) -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <span class="px-3 py-1 bg-amber-100 text-amber-900 text-xs font-semibold rounded-full flex items-center gap-1">
+              🏆 2026 智慧創新大賞 (BEST AI AWARDS) — 佳作獎
+            </span>
+            <span class="text-xs text-slate-500">經濟部頒發 | 獎字第115DOIT第10197號</span>
+          </div>
+
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+              智慧照管通 (Smart Coordinator)
+            </h3>
+            <p class="text-sm text-slate-600 font-medium mt-1">
+              基於 RAG 與 Web Search MCP 之代理式 AI 長照評估平台——實現 CMS 自動化分級與 70% 行政效能提升之全流程實證解決方案
+            </p>
+          </div>
+
+          <p class="text-sm text-slate-600 leading-relaxed">
+            帶領國眾電腦研發團隊打造之企業級 Agentic AI 長照評估平台。結合 Model Context Protocol (MCP) 與專利級檢索增強生成（RAG）架構，協助第一線長照照管專員即時交叉比對訪視紀錄與法規規範，自動完成照護管理系統（CMS）分級預測，成功降低 70% 行政重複作業，獲得經濟部評審高度肯定。
+          </p>
+
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">Agentic AI</span>
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">Model Context Protocol (MCP)</span>
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">RAG Architecture</span>
+            <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-md font-mono">Healthcare Informatics</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONTACT / LINKS -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Contact & Collaboration</h2>
+          <p class="text-sm sm:text-base text-slate-600">
+            歡迎產官學研演講邀約、企業 AI 落地內訓、臨床研究合作或技術顧問諮詢。
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 text-left">
+            <!-- Academic Email -->
+            <a href="mailto:D1500707@cgu.edu.tw" class="p-4 rounded-xl border border-slate-200 hover:border-brand-600 hover:shadow-sm transition bg-slate-50/60 block">
+              <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Academic Email</span>
+              <span class="text-xs font-mono text-brand-800 break-all font-medium">D1500707@cgu.edu.tw</span>
+            </a>
+
+            <!-- Professional Email -->
+            <a href="mailto:tommyhktang@gmail.com" class="p-4 rounded-xl border border-slate-200 hover:border-brand-600 hover:shadow-sm transition bg-slate-50/60 block">
+              <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Primary Email</span>
+              <span class="text-xs font-mono text-brand-800 break-all font-medium">tommyhktang@gmail.com</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/tommyhktang-creator" target="_blank" rel="noopener noreferrer" class="p-4 rounded-xl border border-slate-200 hover:border-brand-600 hover:shadow-sm transition bg-slate-50/60 block">
+              <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">GitHub Portfolio</span>
+              <span class="text-xs font-mono text-brand-800 break-all font-medium">tommyhktang-creator</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾 Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 湯惠剛 (Tommy Tang) · Student ID: D1500707 · Built with Generative AI Collaboration</p>
+      <div class="flex items-center space-x-6">
+        <a href="https://github.com/tommyhktang-creator" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">GitHub</a>
+        <a href="mailto:D1500707@cgu.edu.tw" class="hover:text-white transition">CGU Mail</a>
+        <a href="#about" class="hover:text-white transition">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 行動版漢堡選單切換開關
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // 點擊選單內部項目自動收合
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
